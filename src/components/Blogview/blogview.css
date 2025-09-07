@@ -1,0 +1,70 @@
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+  
+}
+
+.blogBox {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+.blogBox:hover {
+  transform: translateY(-5px);
+}
+.viewblog h2{
+  text-align: center;
+}
+.blogThumb {
+  background: #ddd;
+  height: 180px;
+}
+
+.blogText {
+  padding: 15px;
+}
+.blogText h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+.blogText a {
+  color: #ff6600;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  color: black;
+}
+.pagination button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+  color: #ff6600;
+}
+.pagination button:hover {
+  background: #f5f5f5;
+}
+.pagination button.active {
+  background: orange;
+  color: white;
+  border-color: orange;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,134 @@
+.resume {
+  
+  margin: auto;
+  padding: 60px 20px;
+background-color:rgba(255, 245, 239, 1);
+
+  
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume-subtitle {
+ 
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.resume-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #111;
+  margin-top: 10px;
+  font-size: bold;
+}
+
+
+.resume-content {
+  display: flex;
+  gap: 40px;
+}
+
+.resume-timeline {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.resume-timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  font-weight: 600;
+  color: #222;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #f97316;
+  border-radius: 50%;
+}
+
+
+.resume-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.resume-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.resume-card {
+  background: #fffaf7;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #f3d9c1;
+  flex: 1;
+  min-width: 250px;
+}
+
+.resume-card h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.place {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.resume-card p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.resume-card span {
+  float: right;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .resume-content {
+    flex-direction: column;
+  }
+  .resume-timeline {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+  }
+  .resume-timeline::before {
+    display: none;
+  }
+  .timeline-item::before {
+    display: none;
+  }
+}

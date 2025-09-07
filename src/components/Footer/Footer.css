@@ -1,0 +1,145 @@
+.footer-main {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.footer-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.brand-col p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.contact-info .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-info a,
+.contact-info span {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #f97316;
+}
+
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+.col h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #f97316;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col ul li {
+  margin-bottom: 10px;
+}
+
+.col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.col ul li a:hover {
+  color: #f97316;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.bottom-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-links li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.bottom-links li a:hover {
+  color: #f97316;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
